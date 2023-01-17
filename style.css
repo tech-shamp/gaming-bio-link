@@ -1,0 +1,104 @@
+@import "css/font-awesome-pro.css";
+@import "fonts/fonts.css";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Telegraf";
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets/main-bg.jpg");
+  overflow: hidden;
+}
+.icons-styles {
+  color: #fff;
+  font-size: 2.6rem;
+  transition: all 1000ms linear;
+}
+
+.center-1 {
+  text-align: center;
+}
+.center-1 h3 {
+  margin-bottom: 0.8rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+.center-1 p {
+  text-transform: uppercase;
+}
+
+.center-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 3rem;
+  margin: 2rem 0;
+  padding: 2.2rem 4rem;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  text-transform: capitalize;
+}
+.center-2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 0.4rem;
+}
+.center-2 div:hover .icons-styles {
+  transform: rotateY(360deg);
+}
+
+.center-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.center-3 .icons-styles {
+  font-size: 1.4rem;
+  transition: all 200ms linear !important;
+}
+.center-3 .icons-styles:hover {
+  color: #173753;
+}
+
+@media screen and (max-width: 1024px) {
+  /* .wrapper {
+    width: 60%;
+  } */
+}
+@media screen and (max-width: 600px) {
+  .center-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .wrapper {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 393px) {
+  .wrapper {
+    width: 90%;
+  }
+}

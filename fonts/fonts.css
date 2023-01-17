@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Telegraf";
+  font-weight: 100;
+  font-style: normal;
+  src: url("Telegraf-UltraLight.woff");
+}
+@font-face {
+  font-family: "Telegraf";
+  font-weight: 400;
+  font-style: normal;
+  src: url("Telegraf-Regular.woff");
+}
+@font-face {
+  font-family: "Telegraf";
+  font-weight: 900;
+  font-style: normal;
+  src: url("Telegraf-UltraBold.woff");
+}
